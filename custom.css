@@ -1,0 +1,17 @@
+.miniplayer  {
+  --mplyr-container: 900px;
+  --mplyr-bg: #0a0a0a;
+  --mplyr-player-bg: #262626;
+  --mplyr-player-color: #fff;
+  --mplyr-info-font: "Montserrat", sans-serif;
+}
+
+
+.miniplayer p {
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+}
+
+.miniplayer .custom-audio-player-container {
+    padding: 0 !important;
+}

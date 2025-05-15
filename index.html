@@ -1,0 +1,74 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/fonts/remixicon.css">
+<link rel="stylesheet" href="css/main.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="js/main.js" defer></script>
+<link rel="stylesheet" href="custom.css"/>
+<script>
+  window.miniPlayer = {
+    timeRefresh: 5000,
+    streamUrl: 'https://server4.hostradios.com/8580/stream',
+    audioApi: 'https://server4.hostradios.com/cp/get_info.php?p=8580'
+  }
+</script>
+<div class="miniplayer relative z-10 l:p-0.25 p-0.5">
+  <div class="miniplayer-content flex l:row column items-center justify-between l:g-1 g-0.5">
+    <!-- PLAYER -->
+    <div class="miniplayer-player flex flex-1 items-center p-0.25 pr-1.5 g-0.75">
+      <!-- Controles -->
+      <button aria-label="Play/Pause" class="miniplayer-button miniplayer-button-play flex-none">
+        <i class="ri-play-fill"></i>
+      </button>
+      <!-- / Controles -->
+
+      <!-- Picture -->
+      <div class="miniplayer-player-image">
+        <img src="https://i.ibb.co/JnMwKq0/FMGOSPEL.png" alt="picture" height="36" width="36">
+      </div>
+      <!-- / Picture -->
+
+      <!-- Info -->
+      <div class="miniplayer-info flex-1 fw-500">
+        <p class="miniplayer-alert fs-9 uppercase">Tocando Ahora</p>
+        <p class="miniplayer-title fs-8 ">FM GOSPEL</p>
+      </div>
+      <!-- / Info -->
+
+      <!-- Volumen -->
+      <div class="miniplayer-volume l:flex none items-center g-0.5 flex-none">
+        <button class="miniplayer-volume-toggle">
+          <i class="ri-volume-up-fill"></i>
+        </button>
+        <div class="miniplayer-range-wrapper">
+          <input aria-label="Volume" class="miniplayer-volume-input" max="100" min="0" name="miniplayer" type="range" value="100">
+          <div class="miniplayer-range-fill"></div>
+          <div class="miniplayer-range-thumb"></div>
+        </div>
+      </div>
+      <!-- / Volumen -->
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjYGBgaAAAAIUAgbVRNccAAAAASUVORK5CYII=" class="miniplayer-cover" width="600" height="600" alt="Cover"/>
+    </div>
+    <!-- / END PLAYER -->
+
+    <!-- SOCIALS -->
+    <nav class="miniplayer-socials flex g-0.5">
+      <a href="https://www.facebook.com/impactandonuestrageneracion/" class="miniplayer-socials-link">
+        <i class="ri-facebook-circle-fill"></i>
+      </a>
+      <a href="https://www.instagram.com/gdecambiovillegas/" class="miniplayer-socials-link">
+        <i class="ri-instagram-fill"></i>
+      </a>
+      <a href="https://x.com/gdecambio/" class="miniplayer-socials-link">
+        <i class="ri-twitter-x-fill"></i>
+      </a>
+      <a href="https://wa.me/5493388527910/" class="miniplayer-socials-link">
+        <i class="ri-whatsapp-fill"></i>
+      </a>
+    </nav>
+    <!-- / END SOCIALS -->
+  </div>
+  <div class="visualizer"></div>
+</div>
+
